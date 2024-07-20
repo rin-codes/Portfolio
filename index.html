@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=devide-width, initial-scale: 1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Grand+Hotel&family=Leckerli+One&family=Pacifico&family=Playwrite+PE:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Grand+Hotel&family=Leckerli+One&family=Pacifico&family=Playwrite+PE:wght@100..400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <title>Rin's Web Design Portfolio</title>
+  <link rel="icon" href="/portfolio-media/element-flower-icon-free-png.webp">
+
+<style>
+  /* General settings */
+
+* {
+  margin: 0;
+  background-color: white;
+}
+
+
+body {
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: white;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: rgb(187, 158, 231);
+  border-radius: 30px;
+}
+
+/* Navigation section */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 45px;
+  width: 100vw;
+  column-gap: 350px;
+  background-color: rgb(187, 158, 231);
+}
+
+.left-header {
+  font-family: "Leckerli One", sans-serif;
+  font-size: 50px;
+  color: white;
+  background-color: rgb(187, 158, 231);
+}
+
+.right-header {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  font-family: "Bree Serif", sans-serif;
+  color: white;
+  background-color: rgb(187, 158, 231);
+  font-size: 20px;
+}
+
+.nav-link, .ulbar, .navbar {
+  background-color: rgb(187, 158, 231);
+}
+
+nav > ul {
+  display: flex;
+  column-gap: 30px;
+  list-style-type: none;
+}
+
+a, nav > ul > li:visited, nav > ul > li:hover, nav > ul > li:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.dark-mode-icon1 {
+  border: 1px solid white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: 4px;
+}
+
+.dark-mode-icon1:hover {
+  cursor: pointer;
+}
+
+.dark-mode-icon2 {
+  border: 1px solid rgb(187, 158, 231);;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(187, 158, 231);;
+  margin-left: -32px;
+  margin-top: 1px;
+}
+
+/* About section */
+
+.welcome-section {
+  height: 100vh;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 20px;
+  height: calc(100vh - 95px);
+  background-color: white;
+}
+
+.about-photo {
+  height: 400px;
+  margin-left: 100px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 47% 54% 71% 29% / 39% 46% 54% 60%;
+}
+
+.about-description {
+  width: 550px;
+  margin-right: 120px;
+  line-height: 30px;
+}
+
+.hiimrin {
+  background-color: white;
+  font-family: "Bree Serif", sans-serif;
+  font-size: 50px;
+  padding-bottom: 30px;
+  line-height: 50px;
+}
+
+.hiimrin-description {
+  background-color: white;
+  font-family: "Roboto Mono", Arial;
+  font-size: 20px;
+}
+
+/* Projects section */
+.projects-section {
+  background: rgb(156, 236, 230);
+  padding-bottom: 40px;
+  width: 100vw;
+}
+
+.project-title {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-family: "Bree serif", sans-serif;
+  font-size: 40px;
+  background-color: rgb(156, 236, 230);
+}
+
+/* ---------LAPTOP */
+.laptop {
+  margin: auto;
+  width: 50%;
+  height: 360px;
+  background-color: rgb(156, 236, 230);
+}
+
+.laptop-monitor {
+  background-color: white;
+  width: 300px;
+  height: 170px;
+  margin: auto;
+  border-bottom: 3px solid rgb(187, 158, 231);
+}
+
+.laptop-screen {
+  background-color: rgb(187, 158, 231);
+  width: 280px;
+  height: 150px;
+  margin: auto;
+  border-top: 10px solid white;
+}
+
+.laptop-body {
+  height: 85px;
+  margin: auto;
+  border-bottom: 85px solid white;
+  border-left: 35px solid rgb(156, 236, 230);
+  border-right: 35px solid rgb(156, 236, 230);
+  height: 0;
+  width: 300px;
+}
+
+.laptop-keyboard {
+  border-bottom: 48px solid rgb(187, 158, 231);
+  border-left: 16px solid white;
+  border-right: 16px solid white;
+  border-top: 6px solid white;
+}
+
+.laptop-touchpad {
+  border-bottom: 18px solid rgb(187, 158, 231);
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 7px solid white;
+  width: 55px;
+  margin: auto;
+}
+
+.laptop-bottom {
+  width: 362px;
+  margin: auto;
+  border-bottom: 8px solid rgb(187, 158, 231);
+  border-left: 3px solid rgb(156, 236, 230);
+  border-right: 3px solid rgb(156, 236, 230);
+  height: 0;
+  transform: rotate(180deg);
+}
+
+/* ---------PROJECTS */
+.projects {
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 30px;
+  background: rgb(156, 236, 230);
+}
+
+.project-1 {
+  border-top: 10px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-2 {
+  border-top: 10px solid #F4F2DA;
+  background-color:#F4F2DA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-3 {
+  border-top: 10px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-landing-page-image, .tribute-page-image {
+  height: 280px;
+  width: 440px;
+  object-fit: contain;
+}
+
+.recipe-page-image {
+  height: 280px;
+  width: 440px;
+  object-fit: contain;
+  background-color: #F4F2DA;
+}
+
+.product-landing-page-title, .tribute-page-title {
+  background-color: rgb(187, 158, 231);
+  color: white;
+  width: 440px;
+  height: 40px;
+  text-align: center;
+  padding-top: 15px;
+  font-family: "Bree Serif", sans-serif;
+  border-top: 10px solid white;
+}
+
+.recipe-page-title {
+  background-color: rgb(187, 158, 231);
+  color: white;
+  width: 440px;
+  height: 40px;
+  text-align: center;
+  padding-top: 15px;
+  font-family: "Bree Serif", sans-serif;
+  border-top: 10px solid #F4F2DA;
+}
+
+.view-more {
+  font-family: "Bree Serif", sans-serif;
+  font-size: 20px;
+  background-color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 0px;
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 5px rgb(187, 158, 231);
+}
+
+.view-more:hover {
+  cursor: pointer;
+  background-color: rgb(187, 158, 231);
+  color: white;
+  box-shadow: 5px 5px white;
+}
+
+/* Contact me section */
+.contact-me-title {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-family: "Bree serif", sans-serif;
+  font-size: 40px;
+}
+
+.contact-me {
+  height: calc(100vh - 200px);
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  font-family: "Roboto Mono", Arial;
+  column-gap: 90px;
+}
+
+.drop-me {
+  width: 490px;
+  font-size: 20px;
+  line-height: 27px;
+  padding-bottom: 30px;
+}
+
+.message-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  width: 490px;
+}
+
+.name-box, .email-box {
+  border: 2px solid rgb(187, 158, 231);
+  font-size: 18px;
+  font-family: "Roboto Mono", Arial;
+  height: 35px;
+  width: 490px;
+} 
+
+.message-box {
+  border: 2px solid rgb(187, 158, 231);
+  font-size: 18px;
+  font-family: "Roboto Mono", Arial;
+  height: 80px;
+  width: 490px;
+}
+
+.name-box:focus {
+  border: 2px solid rgb(156, 236, 230);
+}
+
+.message-button {
+  background-color: rgb(187, 158, 231);
+  border: 0;
+  font-size: 18px;
+  font-family: "Bree serif", sans-serif;
+  height: 37px;
+  width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 5px rgb(156, 236, 230);
+}
+
+.message-button:hover {
+  cursor: pointer;
+  background-color: rgb(156, 236, 230);
+  color: white;
+  box-shadow: 5px 5px rgb(187, 158, 231);
+}
+
+.find-me {
+  width: 490px;
+  font-size: 20px;
+  line-height: 27px;
+  padding-bottom: 30px;
+  
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+i {
+  height: 70px;
+  font-size: 28px;
+}
+
+/* Copyright section */
+.copyright {
+  height: 70px;
+  width: 100vw;
+  background-color: rgb(156, 236, 230);
+  text-align: center;
+  line-height: 70px;
+  font-family: "Bree serif", sans-serif;
+}
+
+/* Media */
+
+@media only screen and (max-width: 735px) {
+  .about-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+  }
+
+  .about-description {
+    text-align: center;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: -50px;
+  }
+
+  .laptop {
+    display: none;
+  }
+
+  .header {
+    position: fixed;
+  }
+}
+</style>
+
+</head>
+
+
+<body>
+
+<!-- Navigation section -->
+<div class="welcome-section">
+<div class="header">
+  <div class="left-header">Rin &#9880;</div>
+
+  <div class="right-header">
+    <nav id="navbar" class="navbar">
+      <ul class="ulbar">
+        <li><a class="nav-link" href="#about">about</a></li>
+        <li><a class="nav-link" href="#projects">projects</a></li>
+        <li><a class="nav-link" href="#contactme">contact me</a></li>
+      </ul>
+    </nav>
+  
+    <div class="dark-mode-icon1"></div>
+    <div class="dark-mode-icon2"></div>
+  </div>
+
+</div>
+
+<!-- About section -->
+<header id="about">
+<div class="about-section">
+  <img class="about-photo" src="/portfolio/portfolio-media/IMG_20221210_031809850_processed.jpg" alt="ai-photo-of-rin" loading="lazy">
+
+  <div class="about-description">
+  <p class="hiimrin">Hi, I'm Rin..&#124;</p>
+  <p class="hiimrin-description">I'm a front end developer with passion for creating interactive code and turning your visions into beautiful web design.</p>
+  </div>
+</header> 
+</div>
+
+<!-- Projects section -->
+<header id="projects">
+<div class="projects-section">
+<h1 id="project-title" class="project-title">projects.</h1>
+
+<div class="laptop">
+  <div class="laptop-monitor">
+    <div class="laptop-screen"></div>
+  </div>
+  <div class="laptop-body">
+    <div class="laptop-keyboard"></div>
+    <div class="laptop-touchpad"></div>
+  </div>
+  <div class="laptop-bottom"></div>
+</div>
+
+<div class="projects">
+  <div class="project-1">
+    <a href=”https://www.freecodecamp.org/fcce6d75b48-060b-4873-a109-47fd8c0a09be” target=”_blank”>
+    <img class="product-landing-page-image" id="product-landing-page-image" src="/portfolio/portfolio-media/postpageimage.png" alt="terracotta-pots-page" loading="lazy"></a>
+    <p class="product-landing-page-title">Product landing page</p>
+
+  </div>
+  <div class="project-2">
+    <a href=”https://www.freecodecamp.org/fcce6d75b48-060b-4873-a109-47fd8c0a09be” target=”_blank”>
+    <img class="recipe-page-image" src="/portfolio/portfolio-media/recipepageimage.png" alt="pasta-recipe-page" loading="lazy"></a>
+    <p class="recipe-page-title">Recipe page</p>
+  </div>
+
+  <div class="project-3">
+    <a href=”https://www.freecodecamp.org/fcce6d75b48-060b-4873-a109-47fd8c0a09be” target=”_blank”>
+    <img class="tribute-page-image" src="/portfolio/portfolio-media/tributepageimage.png" alt="grimes-tribute-page" loading="lazy"></a>
+    <p class="tribute-page-title">Tribute page</p>
+  </div>
+
+</div>
+<a href=”https://www.freecodecamp.org/fcce6d75b48-060b-4873-a109-47fd8c0a09be” target=”_blank”>
+<button class="view-more" href="”https://www.freecodecamp.org/fcce6d75b48-060b-4873-a109-47fd8c0a09be”">view more..</button>
+</a></div>
+</header>
+
+<!-- Contact me section -->
+ <header id="contactme">
+<div class="contact-me-section">
+  <h1 id="contact-me-title" class="contact-me-title">contact me.</h1>
+  <div class="contact-me">
+  <div class="message">
+    <p class="drop-me">Drop me a line to chat about your future projects. I'd love to help!</p>
+    <form class="message-form">
+      <input class="name-box" type="text" id="name" placeholder="Name" required>
+      <input class="email-box" type="email" id="email" placeholder="Email" required>
+      <textarea class="message-box" id="message" rows="5" cols="5" placeholder="Message" required></textarea>
+      <button class="message-button" type="submit">Send</button>
+    </form>
+  </div>
+
+  <div class="socials">
+    <p class="find-me">You can also find me in online spaces >></p>
+    <div class="icons">
+    <a class="icon1" href="https://www.facebook.com/aerinashiderova/" target=”_blank”>
+      <i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/birdirin/" target=”_blank”>
+      <i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com/birdirin" target=”_blank”>
+        <i class="fab fa-twitter"></i></a> 
+      <a href="https://github.com/rin-codes" target=”_blank”>
+        <i class="fab fa-github"></i></a> 
+      <a href="https://www.linkedin.com/in/irena.shiderova/" target=”_blank”>
+        <i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+  </div>
+
+</div>
+</header>
+
+<!-- Copyright section -->
+<div>
+  <p class="copyright">&#169; 2024 &#124; Coded & designed by Rin (Irena Shiderova) &#9880;</p>
+</div>
+
+</body>
+</html>
